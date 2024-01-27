@@ -1,5 +1,14 @@
 version: '3.4'
 services:
+  image_search_server:
+    build: .
+    env_file:
+      - .env
+    ports:
+      - 8081:8081
+    volumes:
+      - .:/usr/src/app
+    command: air
   weaviate:
     command:
     - --host
