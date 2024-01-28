@@ -50,5 +50,4 @@ func main() {
 		server.Run(config)
 	}()
 	wg.Wait()
-
 }
